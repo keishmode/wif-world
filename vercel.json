@@ -1,6 +1,0 @@
-{
-  "buildCommand": "pip install -r requirements.txt && pygbag --build main.py",
-  "outputDirectory": "build/web",
-  "framework": "static",
-  "installCommand": "pip install -r requirements.txt"
-} 
