@@ -1,14 +1,6 @@
 {
-  "builds": [
-    {
-      "src": "main.py",
-      "use": "@vercel/python"
-    }
-  ],
-  "routes": [
-    {
-      "src": "/(.*)",
-      "dest": "main.py"
-    }
-  ]
+  "buildCommand": "pip install -r requirements.txt && pygbag --build main.py",
+  "outputDirectory": "build/web",
+  "framework": "static",
+  "installCommand": "pip install -r requirements.txt"
 } 
